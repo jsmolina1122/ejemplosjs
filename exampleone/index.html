@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
-    <script src="js/variables.js"></script> 
+    <script src="js/variables.js"></script>
+    <script src="js/OperacionesArit.js"></script> 
 
 </head>
-<body>
+<body>  
+    <h1>Formulario Operaciones Aritmeticas</h1>
+        <form>
+            <label form="nuno">Numero Uno</label>
+            <input type="text" name="uno" id="uno">
+            <br><br>
+            <label form="ndos">Numero Dos</label>
+            <input type="text" name="ndos" id="ndos">
+            <br><br>
+            <button type="button" onclick="sumar()">sumar</button>
+            <br>
+            <button type="button" onclick="restar()">restar</button>
+            <br>
+            <button type="button" onclick="multiplicar()">multiplicar</button>
+            <br>
+            <button type="button" onclick="dividir()">dividir</button>
+            <p>resultado:
+                <textarea id="resultadooperacion" cols="5" rows="1"></textarea>
+            </p>
+        </form>
+
+        <form>
+            <label form="base">Base</label>
+            <input type="text" name="base" id="base">
+            <br><br>
+            <label form="altura">Altura</label>
+            <input type="text" name="altura" id="altura">
+            <br><br>
+            <button type="button" onclick="AreaTriangulo()">Area_Triangulo</button>
+            <p>resultado:
+                <textarea id="resultadoarea" cols="5" rows="1"></textarea>
+            </p>
+        </form>
+
+        <form>
+            <label form="radio">radio</label>
+            <input type="text" name="radio" id="radio">
+            <br><br>
+            <button type="button" onclick="AreaCirculo()">Area_Circulo</button>
+            <p>resultado:
+                <textarea id="resultadocirculo" cols="5" rows="1"></textarea>
+            </p>
+        </form>
+        
+
+
     
 </body>
 </html>
