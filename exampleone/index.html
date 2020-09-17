@@ -6,13 +6,14 @@
     <title>Variables</title>
     <script src="js/variables.js"></script>
     <script src="js/OperacionesArit.js"></script> 
+    <script src="js/eDesiciones.js"></script>
 
 </head>
 <body>  
     <!-- <h1>Formulario Operaciones Aritmeticas</h1> 
         <form>
             <label form="nuno">Numero Uno</label>
-            <input type="text" name="uno" id="uno">
+            <input type="text" name="nuno" id="nuno">
             <br><br>
             <label form="ndos">Numero Dos</label>
             <input type="text" name="ndos" id="ndos">
@@ -58,7 +59,7 @@
                     <label for="edad">Edad</label>
                     <input type="text" name="edad" id="edad">
                     <br><br>
-                    <button type="button" onclick="mostrarmensaje()">Mostar</button>
+                    <button type="button" onclick="mostrarMensaje()">Mostar</button>
                 </form>
             </section>
 
@@ -74,11 +75,63 @@
                     <label for="pesop">Peso</label>
                     <input type="text" name="pesop" id="pesop">
                     <br><br>
-                    <button type="button" onclick="mostrarmensajedos()">Mostar</button>
+                    <button type="button" onclick="mostrarMensajedos()">Mostar</button>
                 </form>
             </section>
 
+            <section>
+                <h2>if Case</h2>
+                <form>
+                    <label for="productname">Product Name</label>
+                    <input type="text" name="productname" id="productname"></input>
+                    <br><br>
+                    <button type="button" onclick="mostrarmensajetres()">Mostar</button>
+                </form>
+            </section>
 
+            <section>
+                <h2>Funtions & Param</h2>
+                <form>
+                    <button type="button" onclick="prenderapagar(1)">Prender</button>
+                    <button type="button" onclick="prenderapagar(0)">Apagar</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>bucle for</h2>
+               <script>
+                    //  for(let people=1;people<=3;people++){
+                    //     let age=prompt("Enter age:");
+                    //     const ageparameter=18;
+                    //     let mensaje=(age>=ageparameter)?"Adult":"Young";
+                    //     alert(mensaje);
+                    // } 
+
+                    let cars=["Toyota","Chevrolet","Mazda","Suzuki"];
+                        for (let marcas =0;marcas < cars.length;marcas++) {
+                            //const viewcars=cars[marcas]+"<br>";
+                            const viewcars=`${cars[marcas]}<br>`;
+                            document.write(viewcars);
+                        
+                        }
+                </script>
+            </section>
+
+            <section>
+                <h2>bucle while</h2>
+               <script>
+                   let student=()=>{
+                        let studentname="";
+                        const paraname="NN";
+                        while (studentname.toUpperCase != paraname) {
+                            studentname=prompt("Enter Studen Name");
+                            alert(`Your name is ${studentname} registrade!!!`);
+                        }
+
+                   }
+                    student();
+                </script>
+            </section>
     
 </body>
 </html>
