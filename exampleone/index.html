@@ -97,7 +97,41 @@
                 </form>
             </section>
 
+            <section>
+                <h2>bucle for</h2>
+               <script>
+                    //  for(let people=1;people<=3;people++){
+                    //     let age=prompt("Enter age:");
+                    //     const ageparameter=18;
+                    //     let mensaje=(age>=ageparameter)?"Adult":"Young";
+                    //     alert(mensaje);
+                    // } 
 
+                    let cars=["Toyota","Chevrolet","Mazda","Suzuki"];
+                        for (let marcas =0;marcas < cars.length;marcas++) {
+                            //const viewcars=cars[marcas]+"<br>";
+                            const viewcars=`${cars[marcas]}<br>`;
+                            document.write(viewcars);
+                        
+                        }
+                </script>
+            </section>
+
+            <section>
+                <h2>bucle while</h2>
+               <script>
+                   let student=()=>{
+                        let studentname="";
+                        const paraname="NN";
+                        while (studentname.toUpperCase != paraname) {
+                            studentname=prompt("Enter Studen Name");
+                            alert(`Your name is ${studentname} registrade!!!`);
+                        }
+
+                   }
+                    student();
+                </script>
+            </section>
     
 </body>
 </html>
