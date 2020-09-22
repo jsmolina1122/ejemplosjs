@@ -51,6 +51,15 @@ function mostrarMensajedos(){
     alert(mensajeDesicion);
 }
 
+//if con operador logico OR (||)
+if (edadp <= parametroedad || estaturap >= parametroestatura || pesop == parametropeso) {
+    mensajeDesicion="Apto para realizar el deporte";
+} else {
+    mensajeDesicion="No apto para realizar el deporte";
+}
+alert(mensajeDesicion);
+
+
 function mostrarmensajetres(){
     let productname=document.getElementById("productname").value;
     let price=0;
