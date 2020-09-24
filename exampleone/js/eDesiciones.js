@@ -1,7 +1,7 @@
 
 function mostrarMensaje() {
     
-    let edad=ParseInt(document.getElementById("edad").value);
+    let edad=parseInt(document.getElementById("edad").value);
 
     // if(edad>=18){
     //     mensaje="sos mayor de edad";
@@ -49,17 +49,17 @@ function mostrarMensajedos(){
         mensajeDesicion="No apto para realizar el deporte";
     }
     alert(mensajeDesicion);
+
+
+    //if con operador logico OR (||)
+        if (edadp <= parametroedad || estaturap >= parametroestatura || pesop == parametropeso) {
+            mensajeDesicion="Apto para realizar el deporte";
+        } else {
+            mensajeDesicion="No apto para realizar el deporte";
+        }
+        alert(mensajeDesicion);
+
 }
-
-//if con operador logico OR (||)
-if (edadp <= parametroedad || estaturap >= parametroestatura || pesop == parametropeso) {
-    mensajeDesicion="Apto para realizar el deporte";
-} else {
-    mensajeDesicion="No apto para realizar el deporte";
-}
-alert(mensajeDesicion);
-
-
 function mostrarmensajetres(){
     let productname=document.getElementById("productname").value;
     let price=0;

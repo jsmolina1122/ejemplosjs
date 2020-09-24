@@ -1,6 +1,6 @@
 //Scope
 let nombre = "Fernando";
-//let edad = 35;
+let edad = 35;
 estatura = 1.89;
 const FechaEspecial = "20-10-2020";
 const Estado_Casado = true;
