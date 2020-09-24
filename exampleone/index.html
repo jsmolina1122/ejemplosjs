@@ -132,6 +132,39 @@
                     student();
                 </script>
             </section>
+
+            <section>
+                <h2>bucle do while</h2>
+               <script>
+                   let people=()=>{
+                        let age=0,paramage=0;
+                        let count=-1;
+                        let totalage=0, averangeage=0;
+
+                        do{
+                            age=parseInt(prompt('enter age'));
+                            
+                            if(age <= 18){
+                                alert('i am Sorry');
+                            }else{
+                                alert('Welcom');
+                            }
+                            totalage+=age;
+                            count++;
+                        
+                        }while(age != paramage);
+                        averangeage=parseInt(totalage/count);
+                        console.log(`cant:${count} & total age:${totalage} el promedio de age is:${averangeage}`);
+                            // while (studentname.toUpperCase() != paraname) {
+                            // studentname=prompt("Enter Studen Name");
+                            // alert(`Your name is ${studentname} registrade!!!`);
+                            //  }
+
+                   }
+                    people();
+                </script>
+            </section>
+    
     
 </body>
 </html>
