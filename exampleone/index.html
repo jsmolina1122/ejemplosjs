@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
     <script src="js/variables.js"></script>
-    <script src="js/OperacionesArit.js"></script> 
+    <script src="js/OperacionesArit.js"></script>
     <script src="js/eDesiciones.js"></script>
 
 </head>
-<body>  
+
+<body>
     <!-- <h1>Formulario Operaciones Aritmeticas</h1> 
         <form>
             <label form="nuno">Numero Uno</label>
@@ -52,119 +54,160 @@
                 <textarea id="resultadocirculo" cols="5" rows="1"></textarea>
             </p>
         </form> -->
-        <h1>Ejemplo Estructuras De Decisiones</h1>
-            <section>
-                <h2>if simple</h2>
-                <form>
-                    <label for="edad">Edad</label>
-                    <input type="text" name="edad" id="edad">
-                    <br><br>
-                    <button type="button" onclick="mostrarMensaje()">Mostar</button>
-                </form>
-            </section>
+    <h1>Ejemplo Estructuras De Decisiones</h1>
+    <section>
+        <h2>if simple</h2>
+        <form>
+            <label for="edad">Edad</label>
+            <input type="text" name="edad" id="edad">
+            <br><br>
+            <button type="button" onclick="mostrarMensaje()">Mostar</button>
+        </form>
+    </section>
 
-            <section>
-                <h2>if Anidado</h2>
-                <form>
-                    <label for="edadp">Edad</label>
-                    <input type="text" name="edadp" id="edadp">
-                    <br><br>
-                    <label for="estaturap">Estatura</label>
-                    <input type="text" name="estaturap" id="estaturap">
-                    <br><br>
-                    <label for="pesop">Peso</label>
-                    <input type="text" name="pesop" id="pesop">
-                    <br><br>
-                    <button type="button" onclick="mostrarMensajedos()">Mostar</button>
-                </form>
-            </section>
+    <section>
+        <h2>if Anidado</h2>
+        <form>
+            <label for="edadp">Edad</label>
+            <input type="text" name="edadp" id="edadp">
+            <br><br>
+            <label for="estaturap">Estatura</label>
+            <input type="text" name="estaturap" id="estaturap">
+            <br><br>
+            <label for="pesop">Peso</label>
+            <input type="text" name="pesop" id="pesop">
+            <br><br>
+            <button type="button" onclick="mostrarMensajedos()">Mostar</button>
+        </form>
+    </section>
 
-            <section>
-                <h2>if Case</h2>
-                <form>
-                    <label for="productname">Product Name</label>
-                    <input type="text" name="productname" id="productname"></input>
-                    <br><br>
-                    <button type="button" onclick="mostrarmensajetres()">Mostar</button>
-                </form>
-            </section>
+    <section>
+        <h2>if Case</h2>
+        <form>
+            <label for="productname">Product Name</label>
+            <input type="text" name="productname" id="productname"></input>
+            <br><br>
+            <button type="button" onclick="mostrarmensajetres()">Mostar</button>
+        </form>
+    </section>
 
-            <section>
-                <h2>Funtions & Param</h2>
-                <form>
-                    <button type="button" onclick="prenderapagar(1)">Prender</button>
-                    <button type="button" onclick="prenderapagar(0)">Apagar</button>
-                </form>
-            </section>
+    <section>
+        <h2>Funtions & Param</h2>
+        <form>
+            <button type="button" onclick="prenderapagar(1)">Prender</button>
+            <button type="button" onclick="prenderapagar(0)">Apagar</button>
+        </form>
+    </section>
 
-            <section>
-                <h2>bucle for</h2>
-               <script>
-                    //  for(let people=1;people<=3;people++){
-                    //     let age=prompt("Enter age:");
-                    //     const ageparameter=18;
-                    //     let mensaje=(age>=ageparameter)?"Adult":"Young";
-                    //     alert(mensaje);
-                    // } 
+    <section>
+        <h2>bucle for</h2>
+        <script>
+            //  for(let people=1;people<=3;people++){
+            //     let age=prompt("Enter age:");
+            //     const ageparameter=18;
+            //     let mensaje=(age>=ageparameter)?"Adult":"Young";
+            //     alert(mensaje);
+            // } 
 
-                    let cars=["Toyota","Chevrolet","Mazda","Suzuki"];
-                        for (let marcas =0;marcas < cars.length;marcas++) {
-                            //const viewcars=cars[marcas]+"<br>";
-                            const viewcars=`${cars[marcas]}<br>`;
-                            document.write(viewcars);
-                        
-                        }
-                </script>
-            </section>
+            let cars = ["Toyota", "Chevrolet", "Mazda", "Suzuki"];
+            for (let marcas = 0; marcas < cars.length; marcas++) {
+                //const viewcars=cars[marcas]+"<br>";
+                const viewcars = `${cars[marcas]}<br>`;
+                document.write(viewcars);
 
-            <section>
-                <h2>bucle while</h2>
-               <script>
-                   let student=()=>{
-                        let studentname="";
-                        let paraname="NN";
-                        while (studentname.toUpperCase() != paraname) {
-                            studentname=prompt("Enter Studen Name");
-                            alert(`Your name is ${studentname} registrade!!!`);
-                        }
+            }
+        </script>
+    </section>
 
-                   }
-                    student();
-                </script>
-            </section>
+    <section>
+        <h2>bucle while</h2>
+        <script>
+            let student = () => {
+                let studentname = "";
+                let paraname = "NN";
+                while (studentname.toUpperCase() != paraname) {
+                    studentname = prompt("Enter Studen Name");
+                    alert(`Your name is ${studentname} registrade!!!`);
+                }
 
-            <section>
-                <h2>bucle do while</h2>
-               <script>
-                   let people=()=>{
-                        let age=0,paramage=0;
-                        let count=-1;
-                        let totalage=0, averangeage=0;
+            }
+            student();
+        </script>
+    </section>
 
-                        do{
-                            age=parseInt(prompt('enter age'));
-                            
-                            if(age <= 18){
-                                alert('i am Sorry');
-                            }else{
-                                alert('Welcom');
-                            }
-                            totalage+=age;
-                            count++;
-                        
-                        }while(age != paramage);
-                        averangeage=parseInt(totalage/count);
-                        console.log(`cant:${count} & total age:${totalage} el promedio de age is:${averangeage}`);
-                            // while (studentname.toUpperCase() != paraname) {
-                            // studentname=prompt("Enter Studen Name");
-                            // alert(`Your name is ${studentname} registrade!!!`);
-                            //  }
+    <section>
+        <h2>bucle do while</h2>
+        <script>
+            let people = () => {
+                let age = 0,
+                    paramage = 0;
+                let count = -1;
+                let totalage = 0,
+                    averangeage = 0;
 
-                   }
-                    people();
-                </script>
-            </section>
-    
-    
+                do {
+                    age = parseInt(prompt('enter age'));
+
+                    if (age <= 18) {
+                        alert('i am Sorry');
+                    } else {
+                        alert('Welcom');
+                    }
+                    totalage += age;
+                    count++;
+
+                } while (age != paramage);
+                averangeage = parseInt(totalage / count);
+                console.log(`cant:${count} & total age:${totalage} el promedio de age is:${averangeage}`);
+                // while (studentname.toUpperCase() != paraname) {
+                // studentname=prompt("Enter Studen Name");
+                // alert(`Your name is ${studentname} registrade!!!`);
+                //  }
+
+            }
+            people();
+        </script>
+    </section>
+    <br><br>
+    <section>
+        <h2>Bucle forEach</h2>
+        <script>
+            /*ejemplo one*/
+            let ranks = ['a', 'b', 'c'];
+            ranks.forEach(function(e) {
+                    console.log(e);
+                    document.write(e);
+
+                })
+                /*ejemplotwo*/
+            function Counter() {
+                this.count=0;
+                let self=this;
+                return{
+                    increase: function(){
+                        self.count++;
+                    },
+                    current: function(){
+                        return self.count;
+                    },
+                    reset: function(){
+                        self.count=0;
+                    }
+                }
+
+            }
+            let counter =new Counter();
+            let numbers =[1,2,3];
+            let sum =0;
+            numbers.forEach(function(e){
+                sum += e;
+                this.increase();
+            },counter)
+
+            console.log(sum);
+            console.log(counter.current());
+        </script>
+    </section>
 </body>
+
 </html>
